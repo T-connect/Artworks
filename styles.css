@@ -1,0 +1,99 @@
+body{
+    background-color: black;
+}
+
+.container{
+    padding: 0 10px;
+}
+
+h1{
+    color: grey;
+    font-size: 40px;
+}
+
+.movie-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.movie{
+    background: linear-gradient(130deg, rgba(128, 128, 128, 0) 50%, rgba(128, 128, 128, 0.1) 50% 100%);
+    border-left: 1px solid rgba(27, 27, 27, 0.1);
+    width: 24%;
+    border-radius: 12px;
+}
+
+.image{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.small{
+    font-size: 13px;
+    color: rgb(201, 198, 198);
+}
+
+.origin{
+    color: rgb(241, 83, 162);
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.exhibition-history{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.timestamp{
+    color: rgb(124, 122, 122);
+    font-size: 12px;
+}
+
+.more-details{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.close-btn{
+    background: transparent;
+    color: white;
+    border: 1px solid grey;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.close-btn:hover{
+    background-color: rgba(58, 57, 57, 0.5);
+    color: white;
+}
+
+.fa-window-close{
+    background: transparent;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .movie-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie{
+        width: 90vw;
+        background: linear-gradient(130deg, rgba(128, 128, 128, 0) 50%, rgba(128, 128, 128, 0.2) 50% 100%);
+        border-left: 1px solid rgba(27, 27, 27, 0.8);
+        border-bottom: 1px solid rgba(27, 27, 27, 0.8);
+    }
+}
